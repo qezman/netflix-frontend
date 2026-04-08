@@ -28,3 +28,9 @@ jobs:
 
       - name: Check build
         run: ls -la build
+
+      - name: Log in to ECR
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: List ECR repositories
+        run: aws ecr describe-repositories
