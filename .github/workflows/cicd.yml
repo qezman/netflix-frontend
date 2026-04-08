@@ -45,3 +45,6 @@ jobs:
       - name: Verify tagged image
         run: docker images
 
+      - name: Push Docker image
+        run: docker push 663291012203.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/netflix-frontend:latest
+
