@@ -1,0 +1,10 @@
+version: "3"
+services:
+  frontend:
+    image: netflix_frontend:latest
+    ports:
+      - "80:80"
+  backend:
+    image: netflix_backend:latest
+    ports:
+      - "8080:8080"
