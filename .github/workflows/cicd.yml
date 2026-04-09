@@ -46,5 +46,5 @@ jobs:
         run: docker images
 
       - name: Push Docker image
-        run: docker push 663291012203.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/netflix_frontend:latest
+        run: docker push 663291012203.dkr.ecr.us-east-1.amazonaws.com/netflix_frontend:latest
 
